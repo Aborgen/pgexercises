@@ -1,0 +1,2 @@
+-- Simple SQL Queries
+-- https://pgexercises.com/questions/basic/
