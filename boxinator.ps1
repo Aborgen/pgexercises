@@ -56,7 +56,11 @@ function splitIntoRows($content) {
   $splitContent = $content.Split("`n");
   $rows = [System.Collections.ArrayList]::new();
   for ($i = 0; $i -lt $splitContent.Count; $i++) {
-    $row = $splitContent[$i].Split("`t").Trim();
+    $row = $splitContent[$i].Split("`t");
+    foreach ($word in $row) {
+      $word = $word.Trim();
+    }
+
     $rows.Add($row) | Out-Null;
   }
   
