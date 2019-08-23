@@ -131,5 +131,4 @@ $borderLength = getBorderLength($rows);
 $border = printBorder $borderLength $borderIndicators;
 $box = constructBox $rows $border;
 
-Set-Clipboard $box;
 Write-Host $box;
