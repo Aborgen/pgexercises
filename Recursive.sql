@@ -86,7 +86,7 @@ FROM cd.members AS m
 JOIN recommendation AS r
 ON m.memid = r.recommendedby
 WHERE r.memid IN (12, 22)
-ORDER BY memid ASC, recommendedby DESC
+ORDER BY memid ASC, recommendedby DESC;
 
 /*
 +-------+---------------+-----------+----------+
